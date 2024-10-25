@@ -1,0 +1,16 @@
+<html>
+    <body>
+        <h2>JS object Accessors</h2>
+        <p id ="demo"></p>
+        <script>
+        const student={
+            name:"kumar",
+            rollno:"111",
+            dob:"11-11-2011",
+        getrollno:function(){return this.rollno;
+          }
+        }
+        document.getElementById("demo").innerHTML=student.getrollno();
+    </script>
+    </body>
+    </html>

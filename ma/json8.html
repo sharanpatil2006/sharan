@@ -1,0 +1,24 @@
+<html>
+<head>
+    <title>JS Object Accessors</title>
+</head>
+<body>
+    <h2>JS Object Accessors</h2>
+    <p id="demo"></p>
+
+    <script>
+        const student = {
+            name: "kumar",
+            rollno: "111",
+            dob: "11-11-2011",
+            setrollno: function(value) {
+                this.rollno = value;
+            }
+        };
+
+        student.setrollno("123");
+        document.getElementById("demo").innerHTML = student.rollno;
+    </script>
+
+</body>
+</html>

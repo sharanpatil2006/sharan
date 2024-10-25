@@ -1,0 +1,21 @@
+<html>
+    <body>
+        <h2>Creating an Object with function</h2>
+        <p id="demo"></p>
+        <script>
+            const Person = {
+                fname: "Ajith",
+                mname: "Kumar",
+                lname: "Ujire",
+                Dob: "12-12-2022",
+                Age: "30",
+                Fathername: "Suresh",
+                State: "Karnataka",
+                Fullname: function() {
+                    return this.fname + " " + this.mname + " " + this.lname;
+                }
+            };
+            document.getElementById("demo").innerHTML = Person.Fullname();
+        </script>
+    </body>
+</html>

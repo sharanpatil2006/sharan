@@ -1,0 +1,14 @@
+<html>
+    <body>
+        <h2>JSON Constructors</h2>
+        <p id="demo"></p>
+        <script>
+            function person(first,last){
+                this.fname=first;
+                this.lname=last;
+            }
+            const myFather = new person("Kumar","Ujire");
+            document.getElementById("demo").innerHTML=myFather.lname;
+        </script>
+    </body>
+</html>
